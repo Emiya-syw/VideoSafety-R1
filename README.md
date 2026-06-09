@@ -383,7 +383,26 @@ on shared storage.
 See [LICENSE](LICENSE). This project is derived from VideoLLaMA3; retain and
 follow the licenses and usage terms of the original model and all datasets.
 
+## TODO
+
+- [ ] Release the VideoSafety-R1 training datasets.
+- [ ] Release the evaluation datasets and evaluation scripts.
+
 ## Citation
 
-Add the VideoSafety-R1 BibTeX entry here when the paper metadata is public.
+If this repository or the VideoSafety-R1 method is useful for your research,
+please cite:
+
+```bibtex
+@misc{sun2026evaluationdefenseadvancingsafety,
+  title={From Evaluation to Defense: Advancing Safety in Video Large Language Models},
+  author={Yiwei Sun and Peiqi Jiang and Chuanbin Liu and Luohao Lin and Zhiying Lu and Hongtao Xie},
+  year={2026},
+  eprint={2505.16643},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2505.16643},
+}
+```
+
 Please also cite VideoLLaMA3 and the datasets used by your training run.
