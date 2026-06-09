@@ -1,0 +1,39 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "videosafety-r1-training"
+version = "1.0.0"
+description = "Training-only implementation of VideoSafety-R1 on VideoLLaMA3"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch==2.4.0",
+    "torchvision==0.19.0",
+    "transformers==4.46.3",
+    "tokenizers==0.20.3",
+    "datasets==2.21.0",
+    "accelerate==1.0.1",
+    "deepspeed==0.15.4",
+    "trl==0.16.1",
+    "peft==0.4.0",
+    "bitsandbytes==0.43.3",
+    "timm==1.0.3",
+    "einops==0.6.1",
+    "numpy==1.24.4",
+    "pillow",
+    "decord==0.6.0",
+    "imageio==2.34.0",
+    "opencv-python==4.6.0.66",
+    "ffmpeg-python",
+    "pyarrow",
+    "rouge-score",
+    "sentencepiece==0.1.99",
+    "tensorboard",
+    "wandb",
+]
+
+[tool.pdm.build]
+package-dir = "."
+includes = ["videollama3"]

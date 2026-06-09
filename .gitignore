@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+.venv/
+
+# Log
+*.log
+*.log.*
+wandb/
+runs/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Other
+.DS_Store
+
+# Local datasets and checkpoints
+data_root/
+/data/
+/datasets/
+weights/
+checkpoints/
+work_dirs/
+log/
+
+# Generated annotation files are usually large and should not be committed.
+*.jsonl
